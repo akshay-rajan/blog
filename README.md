@@ -82,6 +82,10 @@ The blog posts can be organized into different folders in the `_posts` directory
   ```
 > Drafts does not have to follow the naming convention.
 
+### Pages
+
+Pages like the `about.markdown` can be included by simply creating a markdown file on the root of the project.
+
 ---
 References: 
 - https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html
