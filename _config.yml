@@ -31,6 +31,15 @@ theme: minima
 plugins:
   - jekyll-feed
 
+defaults:
+  - 
+    scope:
+      path: "" # Path to the files in which the defaults will be applied
+      type: "posts" # The type of the files in the above path
+    values:
+      layout: "post" # Default layout for the files in the above path
+  
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

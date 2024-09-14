@@ -86,6 +86,32 @@ The blog posts can be organized into different folders in the `_posts` directory
 
 Pages like the `about.markdown` can be included by simply creating a markdown file on the root of the project.
 
+### Permalinks
+
+To make the URL independent of the front matter, we need to use permanent links for the posts.
+```yml
+permalink: "/url-for-this-post/"
+```
+We can use variables in the link:
+```yml
+permalink: "/:title"
+```
+
+### Default Front Matter
+
+We can define default front matter in the `_config.yml`:
+
+```yml
+defaults:
+  - 
+    scope:
+      path: "" # Path to the files in which the defaults will be applied
+      type: "post"
+    values:
+      layout: "post" # Default layout for the files in the above path
+```
+
+
 ---
 References: 
 - https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html
