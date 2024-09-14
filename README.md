@@ -4,6 +4,18 @@ Jekyll allows us to **generate static sites** and write content in markdown.
 The content can be stored in Github itself, and hosted freely via Github Pages.
 Jekyll uses *Liquid* templating language for creating custom layouts and *includes*.
 
+### Contents
+
+- [Requirements](#requirements)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Front Matter](#front-matter)
+- [Posts](#posts)
+- [Pages](#pages)
+- [Permalinks](#permalinks)
+- [Default Front Matter](#default-front-matter)
+- [Themes](#themes)
+
 ### Requirements
 - Ruby 
   ```bash
@@ -111,8 +123,36 @@ defaults:
       layout: "post" # Default layout for the files in the above path
 ```
 
+### Themes
+
+The default theme is `minima`. More themes can be found at [rubygems.org](https://rubygems.org).
+
+To change theme, just add a new line to the `Gemfile` and install
+```Gemfile
+gem "jekyll-theme-hacker"
+```
+```bash
+bundle install
+```
+Finally, update the theme in `_config.yml` and restart the server via `bundle exec jekyll serve`.
+
+Make sure the *layouts* in the front matter are available for the current theme.
+
+### Layouts
+
+Each theme defines some layouts. 
+We can override / create custom layouts by creating a new folder `_layouts`.
+Inside this, add new layouts as `mylayout.html`.
+
+To grab the content of the posts, use the *Liquid* templating language:
+```html
+{{ content }}
+```
+We can assign hierarchical layouts, for example, a general layout followed by all the pages, and specific layouts for each category of posts.
+
+This is done by creating the general `layout.html`, and then using it as the `layout` front matter in another layout. 
 
 ---
 References: 
-- https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html
-- https://youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&si=d5X-u4ORJgHZ558h
+- [Giraffe Academy's Playlist](https://youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&si=d5X-u4ORJgHZ558h)
+- [Chad Baldwin's Blog](https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html)
