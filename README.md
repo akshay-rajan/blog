@@ -62,6 +62,7 @@ Custom variables (like 'author' above) can be accessed from the layouts.
 
 ### Posts
 
+To add a post, create a new file somewhere inside `_posts`.
 Jekyll requires blog post files to be named according to the following format:
 
 `YYYY-MM-DD-title.markdown`
@@ -71,6 +72,15 @@ Jekyll requires blog post files to be named according to the following format:
 Include the `layout: "post"` front matter, or a custom layout.
 
 By default, the title and date is generated from the filename.
+
+The blog posts can be organized into different folders in the `_posts` directory, without causing any problems to the site.
+
+> Draft posts can be kept inside `_drafts`.
+> To see the drafts, serve the projects through
+  ```
+  jekyll serve --draft
+  ```
+> Drafts does not have to follow the naming convention.
 
 ---
 References: 
