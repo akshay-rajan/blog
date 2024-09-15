@@ -37,7 +37,9 @@ defaults:
       path: "" # Path to the files in which the defaults will be applied
       type: "posts" # The type of the files in the above path
     values:
-      layout: "post" # Default layout for the files in the above path
+      layout: "custom-post" # Default layout for the files in the above path
+      author: "Akshay Rajan" # Default author for the files in the above path
+      permalink: /:title # Default permalink for the files in the above path
   
 
 # Exclude from processing.

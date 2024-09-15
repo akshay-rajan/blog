@@ -1,5 +1,4 @@
 ---
-title:  "Lorem Ipsum"
 date:   2024-09-14 22:41:58 +0530
 categories: jekyll update
 permalink: "/:title"
