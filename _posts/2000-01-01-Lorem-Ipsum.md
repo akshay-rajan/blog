@@ -1,5 +1,5 @@
 ---
-permalink: "/:title"
+permalink: "/lipsum"
 ---
 
 # Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit
