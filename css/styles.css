@@ -35,3 +35,32 @@ h3 {
 /* .secondary {
   font-family: 'Mate SC', serif;
 } */
+
+.posts-list {
+  justify-content: center;
+  list-style-type: none;
+}
+.post-card {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: space-between;
+}
+.post-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.post-card span {
+  opacity: 0.5;
+  text-align: right;
+  display: inline-flex;
+}
+
+.footer-heading {
+  display: none;
+}
+.footer-col-wrapper * {
+  text-align: center;
+}

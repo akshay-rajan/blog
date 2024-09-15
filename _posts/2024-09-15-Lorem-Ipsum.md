@@ -1,7 +1,4 @@
 ---
-layout: custom-post
-author: Akshay R 
-categories: Jekyll
 permalink: "/:title"
 ---
 

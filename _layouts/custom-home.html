@@ -1,0 +1,12 @@
+---
+layout: custom-post
+---
+<ul class="posts-list">
+  {% for post in site.posts %}
+    <li class="post-card">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span>{{ post.date | date: "%B %d, %Y" }}</span>
+      <!-- <p class="post-excerpt">{{ post.excerpt }}</p> -->
+    </li>
+  {% endfor %}
+</ul>
