@@ -1,0 +1,37 @@
+body {
+  font-family: "Gilda Display", serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  margin-top: 0px;
+}
+h1 {
+  font-family: "Literata", serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 20px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 28px;
+}
+.subtitle {
+  opacity: 0.5;
+  font-style: italic;
+}
+.content {
+  font-size: 21px;
+  font-family: "Gilda Display", serif;
+  padding: 45px;
+}
+/* .secondary {
+  font-family: 'Mate SC', serif;
+} */
