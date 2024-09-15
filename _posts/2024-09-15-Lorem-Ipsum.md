@@ -2,6 +2,7 @@
 layout: custom-post
 author: Akshay R 
 categories: Jekyll
+permalink: "/:title"
 ---
 
 # Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit
