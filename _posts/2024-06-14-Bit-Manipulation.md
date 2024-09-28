@@ -1,6 +1,6 @@
 ---
 title: "Bit Manipulation"
-permalink: /:title
+permalink: /bitmanipulation
 ---
 
 # Bit Manipulation
