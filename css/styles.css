@@ -108,6 +108,15 @@ body.dark .site-nav a {
   color: #ffffff;
 }
 
+body.dark .site-nav {
+  background-color: #121212;
+  border: none;
+}
+
+body.dark .site-nav a:hover {
+  color: rgb(9, 255, 0);
+}
+
 body.dark .post-card {
   background-color: #1e1e1e;
   box-shadow: none;
