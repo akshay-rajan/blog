@@ -69,3 +69,96 @@ h3 {
 .footer-col-wrapper * {
   text-align: center;
 }
+
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#theme-toggle:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#theme-toggle .light {
+  display: none;
+}
+
+/* Dark Mode */
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark a {
+  color: white;
+}
+
+body.dark .site-nav a {
+  color: #ffffff;
+}
+
+body.dark .post-card {
+  background-color: #1e1e1e;
+  box-shadow: none;
+}
+
+body.dark .highlight {
+  background-color: #1e1e1e;
+  border: none;
+}
+
+body.dark .post-card a {
+  color: rgb(9, 255, 0);
+}
+
+body.dark code {
+  color: rgb(9, 255, 0);
+  background-color: #1e1e1e;
+  border: none;
+}
+
+body.dark .post-card:hover {
+  box-shadow: 0 0 20px 5px rgba(9, 255, 0, 0.2);
+}
+
+body.dark h1, body.dark h2, body.dark h3 {
+  color: #ffffff;
+}
+
+body.dark .subtitle {
+  opacity: 0.5;
+}
+
+body.dark th {
+  background-color: #ffffff;
+}
+body.dark td {
+  background-color: #f4f4f4;
+}
+
+#theme-toggle {
+  background-color: #ffffff;
+}
+
+body.dark #theme-toggle {
+  background-color: #1e1e1e;
+}
+
+body.dark #theme-toggle .dark {
+  display: none;
+}
+
+body.dark #theme-toggle:hover {
+  box-shadow: 0 0 20px rgb(9, 255, 0);
+}
