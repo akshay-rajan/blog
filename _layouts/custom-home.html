@@ -10,3 +10,47 @@ layout: custom-post
     </li>
   {% endfor %}
 </ul>
+<!-- SEARCH -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select the anchor tag inside the wrapper
+    const siteTitleLink = document.querySelector('.wrapper > a.site-title');
+
+    if (siteTitleLink) {
+      // Update wrapper style
+      siteTitleLink.parentElement.classList.add('title-wrapper');
+      // Create a search box container
+      const searchBoxContainer = document.createElement('div');
+      searchBoxContainer.className = 'search-box-container';
+
+      // Create the search input element
+      const searchInput = document.createElement('input');
+      searchInput.type = 'text';
+      searchInput.placeholder = 'Search...';
+      searchInput.className = 'search-box';
+
+      // Attach the search function to the input event
+      searchInput.addEventListener('input', searchPosts);
+
+      // Append the search input to the container
+      searchBoxContainer.appendChild(searchInput);
+
+      // Insert the search box container after the anchor tag
+      siteTitleLink.insertAdjacentElement('afterend', searchBoxContainer);
+    }
+  });
+  function searchPosts() {
+    const input = document.querySelector('.search-box');
+    const filter = input.value.trimStart().toLowerCase();
+    const posts = document.querySelectorAll('.posts-list .post-card');
+
+    posts.forEach(post => {
+      const title = post.querySelector('a').textContent.toLowerCase();
+      if (title.includes(filter)) {
+        post.style.display = '';
+      } else {
+        post.style.display = 'none';
+      }
+    });
+  }
+</script>
