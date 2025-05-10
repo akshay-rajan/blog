@@ -43,7 +43,7 @@ bundle install
 ```
 Serve the website:
 ```bash
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 The site is now live at http://127.0.0.1:4000/. 
 > After the first serve, just do `jekyll serve`
